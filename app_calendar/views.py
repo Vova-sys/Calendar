@@ -16,7 +16,6 @@ class ListCountries(ListAPIView):
     queryset = Country.objects.all()
     filter_fields = ['name']
 
-
     # def get_queryset(self):
     #     if self.kwargs.get('name'):
     #         return Country.objects.filter(id=self.kwargs.get('name'))
@@ -33,9 +32,6 @@ class ListHolidays(ListAPIView):
             return Holiday.objects.filter(country=self.kwargs.get('id'))
         return Holiday.objects.all()
 
+
 class CreateHolidays(CreateAPIView):
     serializer_class = HolidaySerializerWrite
-
-
-
-
