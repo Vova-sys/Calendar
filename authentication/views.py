@@ -5,7 +5,7 @@ from rest_framework.generics import GenericAPIView, ListAPIView
 # Create your views here.
 from authentication.serializers import UserSerializer, LoginSerializer
 from rest_framework.response import Response
-from rest_framework import status
+from rest_framework import status 
 from rest_framework.authtoken.models import Token
 
 
